@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import csv
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Le csv en entrée doit être un tableau de la forme
+# 0 : (string) nom de l'activité
+# 1 : (int) id de l'activité (qui doit être unique)
+# 2 : (int) timestamp de la mesure
+# 3 : (float) battement cardiaque
+# 4 : (float) accélération selon x
+# 5 : (float) accélération selon y
+# 6 : (float) accélération selon z
+
+# La classe suivante s'occupe de construire les fenêtres de données nécessaires
+# à partir des données entrées, sous la forme ci-dessus
+# Elles ne doivent pas être nécessairement prétaitées (ie enlever les plages 
+# inintéressantes)
+
+
+class Pretreatment:
+    
+    def __init__(self,csv_name):
+        csv = open(csv_name,"r")
+        self.data_extracted = self.extraction(csv)
+        
+    def extraction(file): 
+        # csv est le fichier csv brut contenenant les données
+        # extraction renvoie le talbeau des données (au format numpy)
+        data_csv = csv.reader(file, delimiter=";")
+        data = np.array()
+        for row in data_csv:
+            np.append(data,row)
+        return data
+    
+    
+
+    
+    
