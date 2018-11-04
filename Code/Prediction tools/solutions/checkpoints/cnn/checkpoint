@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/nicolas/Desktop/PSC/Code/Prediction tools/solutions/checkpoints/cnn/TrainedModel.ckpt"
+all_model_checkpoint_paths: "/Users/nicolas/Desktop/PSC/Code/Prediction tools/solutions/checkpoints/cnn/TrainedModel.ckpt"

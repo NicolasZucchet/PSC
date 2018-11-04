@@ -104,7 +104,7 @@ class Model():
     ### Plots a matrix that shows where the mistakes made by the prediction are
     
     ### 1. Computation of the confusion matrix
-        prediction, _ = self.prediction(self.data.X_test)
+        prediction,_ = self.prediction(self.data.X_test)
         if self.data.onehot:
             cm = confusion_matrix(self.data.reverse_one_hot(self.data.y_test),prediction)
         else:
