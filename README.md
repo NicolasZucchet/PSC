@@ -15,7 +15,7 @@ Le dossier <b>Code</b> contient tous les briques du code, allant du traitement d
 - data : les données brutes (récupérées sur internet), le code pour structurer les données et l'output
 - datareader : récupération des données
 - solutions : <b>différents modèles</b> (CNN, SGDC, SVC) utilisés pour faire les comparaisons
-Le fichier "solutions/main.py" sert de base.
+Le fichier "main.py" sert de base.
 
 Le dossier <b>Rapports/Rendus</b> se trouvent les différents rapports rendus durant le projet :
 - La page publique contient un résumé du travail et du résultat.
